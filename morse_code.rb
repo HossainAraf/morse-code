@@ -11,4 +11,9 @@ class MorseCodeDecoder
     "....-" => "4", "....." => "5", "-...." => "6", "--..." => "7",
     "---.." => "8", "----." => "9"
   }.freeze
+
+  def self.decode_char(morse_char)
+    MORSE_CODE_DICT[morse_char]
+  end
+
 end
